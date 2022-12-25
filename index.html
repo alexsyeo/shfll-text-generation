@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shfll text generation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="flex">
+        <form onsubmit="generateText()">
+            <div class="column">
+                <label>Men</label><br>
+                <label for="m1name">Name 1:</label><br>
+                <input type="text" id="m1name" name="m1name"><br>
+                <label for="m1desc">Descriptor 1:</label><br>
+                <input type="text" id="m1desc" name="m1desc"><br>
+                <br>
+                <label for="m2name">Name 2:</label><br>
+                <input type="text" id="m2name" name="m2name"><br>
+                <label for="m2desc">Descriptor 2:</label><br>
+                <input type="text" id="m2desc" name="m2desc"><br>
+                <br>
+                <label for="m3name">Name 3:</label><br>
+                <input type="text" id="m3name" name="m3name"><br>
+                <label for="m3desc">Descriptor 3:</label><br>
+                <input type="text" id="m3desc" name="m3desc"><br>
+                <br>
+                <label for="m4name">Name 4:</label><br>
+                <input type="text" id="m4name" name="m4name"><br>
+                <label for="m4desc">Descriptor 4:</label><br>
+                <input type="text" id="m4desc" name="m4desc"><br>
+                <br>
+                <label for="m5name">Name 5:</label><br>
+                <input type="text" id="m5name" name="m5name"><br>
+                <label for="m5desc">Descriptor 5:</label><br>
+                <input type="text" id="m5desc" name="m5desc"><br>
+                <br>
+            </div>
+    
+            <div class="column">
+                <label>Women</label><br>
+                <label for="w1name">Name 1:</label><br>
+                <input type="text" id="w1name" name="w1name"><br>
+                <label for="w1desc">Descriptor 1:</label><br>
+                <input type="text" id="w1desc" name="w1desc"><br>
+                <br>
+                <label for="w2name">Name 2:</label><br>
+                <input type="text" id="w2name" name="w2name"><br>
+                <label for="w2desc">Descriptor 2:</label><br>
+                <input type="text" id="w2desc" name="w2desc"><br>
+                <br>
+                <label for="w3name">Name 3:</label><br>
+                <input type="text" id="w3name" name="w3name"><br>
+                <label for="w3desc">Descriptor 3:</label><br>
+                <input type="text" id="w3desc" name="w3desc"><br>
+                <br>
+                <label for="w4name">Name 4:</label><br>
+                <input type="text" id="w4name" name="w4name"><br>
+                <label for="w4desc">Descriptor 4:</label><br>
+                <input type="text" id="w4desc" name="w4desc"><br>
+                <br>
+                <label for="w5name">Name 5:</label><br>
+                <input type="text" id="w5name" name="w5name"><br>
+                <label for="w5desc">Descriptor 5:</label><br>
+                <input type="text" id="w5desc" name="w5desc"><br>
+                <br>
+            </div>
+    
+            <label for="startTime">1st Date Start Time:</label><br>
+            <input type="time" id="startTime" name="startTime" step="60" required><br>
+            <label for="roundNumber">Round number:</label><br>
+            <input type="number" id="roundNumber" name="roundNumber" min="1" max="5" required><br>
+            <label for="prompt">Prompt:</label><br>
+            <input type="text" id="prompt" name="prompt" required><br>
+            <br>
+    
+            <input type="submit" value="Generate Text">
+        </form>
+        <ul id="messageList">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
